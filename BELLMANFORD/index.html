@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bellman Ford</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+    <div id="heading">
+    <h1>Bellman Ford</h1>
+    <div class="runner">
+        <button class="btn" id="run" >Run</button>
+        <input placeholder="Enter Source Node" class="src" type="text" />
+    </div>
+    <div class="accept">
+        <p>Press Done only after <br>
+            completing the graph !!</p>
+        <button class="btn" id="complete" >Done!</button>
+        <button class="btn" id="destruction">Destroy</button>
+    </div>
+    </div>
+    <div class="main">
+        <div class="instructions">
+            <ul>
+                <li>Click to Creater a Node</li>
+                <li>Click on two of the nodes you want to make an edge between</li>
+                <li>Click the Done button after you have prepared the graph</li>
+                <li>Enter the source node of your choice and visualise the shortes path by green lines</li>
+                <li>You can change the source node and view shortest path from other nodes as well</li>
+                <li>If the node is not reachable edge will retain its original colour</li>
+            </ul>
+        </div>
+    </div>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+    <script src="script.js"></script>
+</body>
+</html>
