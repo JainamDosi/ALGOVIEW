@@ -37,9 +37,10 @@ function createNode(x, y) {
         nodenum++;
     }
 
-    block.addEventListener('click', function () {
+    block.addEventListener('click', ()=> {
         block.style.backgroundColor = 'black';
         arr.push(block.id);
+
         if (arr.length === 2) {
             drawUsingId(arr);
             arr = [];
@@ -50,8 +51,8 @@ function createNode(x, y) {
 }
 
 const drawUsingId = (ar) => {
-    const id1 = ar[0];
-    const id2 = ar[1];
+    const id1 = Number(ar[0]);
+    const id2 = Number(ar[1]);
 
     // Check if the same node is clicked twice
     if (id1 === id2) {
